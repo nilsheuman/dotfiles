@@ -1,3 +1,8 @@
+# Github gitignore
+function gitignore() {
+	curl -H "Accept:application/vnd.github.v3.raw+json" "https://api.github.com/gitignore/templates/$@"
+}
+
 # Create a new directory and enter it
 function mkd() {
 	mkdir -p "$@" && cd "$@"
